@@ -1,0 +1,59 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: 2px solid rgb(65, 65, 65);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    &:hover {
+      background: rgb(65, 65, 65);
+      color: white;
+    }
+  }
+  .library-active {
+    background: rgb(65, 65, 65);
+
+    color: white;
+  }
+  .nav-buttons {
+    button {
+      width: 100px;
+    }
+    display: flex;
+    width: 380px;
+    justify-content: space-evenly;
+  }
+}
+
+.simple {
+  background: #333333;
+  color: aliceblue;
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: 2px solid aliceblue;
+    color: aliceblue;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    &:hover {
+      background: rgb(65, 65, 65);
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-buttons {
+    button {
+      z-index: 10;
+    }
+  }
+}
